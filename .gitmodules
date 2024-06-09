@@ -1,0 +1,21 @@
+[submodule "ORS-UserService"]
+	path = ORS-UserService
+	url = https://github.com/dnlmor/ORS-UserService.git
+[submodule "ORS-ServiceDiscovery"]
+	path = ORS-ServiceDiscovery
+	url = https://github.com/dnlmor/ORS-ServiceDiscovery.git
+[submodule "ORS-PaymentService"]
+	path = ORS-PaymentService
+	url = https://github.com/dnlmor/ORS-PaymentService.git
+[submodule "ORS-OrderService"]
+	path = ORS-OrderService
+	url = https://github.com/dnlmor/ORS-OrderService.git
+[submodule "ORS-NotificationService"]
+	path = ORS-NotificationService
+	url = https://github.com/dnlmor/ORS-NotificationService.git
+[submodule "ORS-MenuService"]
+	path = ORS-MenuService
+	url = https://github.com/dnlmor/ORS-MenuService.git
+[submodule "ORS-APIGateway"]
+	path = ORS-APIGateway
+	url = https://github.com/dnlmor/ORS-APIGateway.git
