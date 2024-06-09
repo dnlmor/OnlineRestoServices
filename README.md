@@ -4,7 +4,7 @@
     Work in progress
 
 # Project Overview
-    The Online Restaurant Service project aims to develop a microservices-based online platform for managing restaurant operations such as user management, menu management, order processing, payment handling, and notifications. The system is designed to be scalable, modular, and easy to deploy using Docker containers.
+- The Online Restaurant Service project aims to develop a microservices-based online platform for managing restaurant operations such as user management, menu management, order processing, payment handling, and notifications. The system is designed to be scalable, modular, and easy to deploy using Docker containers.
 
 # Project Structure
     OnlineRestoServices/
