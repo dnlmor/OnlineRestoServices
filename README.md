@@ -56,10 +56,10 @@ The Online Restaurant Service project aims to develop a microservices-based onli
 
 # Setup and Deployment
 To deploy the project locally using Docker:
-    - Ensure Docker and Docker Compose are installed on your system
-    - Clone the project repository
-    - Navigate to the project root directory
-    - Run 'docker-compose up --build' to build and start all services
+- Ensure Docker and Docker Compose are installed on your system
+- Clone the project repository
+- Navigate to the project root directory
+- Run 'docker-compose up --build' to build and start all services
 
 # Additional Notes
 Each microservice has its own directory containing its source code, Dockerfile, and dependencies. The api-gateway service acts as a single entry point for all client requests and routes them to the appropriate microservice. Ensure proper port mappings in the docker-compose.yml file to avoid port conflicts.
