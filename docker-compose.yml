@@ -1,0 +1,54 @@
+version: '3'
+
+services:
+  api-gateway:
+    build: ./ORS-APIGateway
+    ports:
+      - "5000:5000"
+    depends_on:
+      - ors-userservice
+      - ors-menuservice
+      - ors-orderservice
+      - ors-paymentservice
+      - ors-notificationservice
+      - ors-servicediscovery
+
+  ors-userservice:
+    build: ./ORS-UserService
+    ports:
+      - "5001:5000"
+    depends_on:
+      - ors-servicediscovery
+
+  ors-menuservice:
+    build: ./ORS-MenuService
+    ports:
+      - "5002:5000"
+    depends_on:
+      - ors-servicediscovery
+
+  ors-orderservice:
+    build: ./ORS-OrderService
+    ports:
+      - "5003:5000"
+    depends_on:
+      - ors-servicediscovery
+
+  ors-paymentservice:
+    build: ./ORS-PaymentService
+    ports:
+      - "5004:5000"
+    depends_on:
+      - ors-servicediscovery
+
+  ors-notificationservice:
+    build: ./ORS-NotificationService
+    ports:
+      - "5005:5000"
+    depends_on:
+      - ors-servicediscovery
+
+  ors-servicediscovery:
+    build: ./ORS-ServiceDiscovery
+    ports:
+      - "5006:5000"
