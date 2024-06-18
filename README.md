@@ -7,136 +7,136 @@ Work in progress
 The Online Restaurant Service project aims to develop a microservices-based online platform for managing restaurant operations such as user management, menu management, order processing, payment handling, and notifications. The system is designed to be scalable, modular, and easy to deploy using Docker containers.
 
 # File Project Structure Backend
-OnlineRestoServices/
-│
-├── ORS-APIGateway/
-│   ├── app/
-│   │   ├── __init__.py
-│   │   ├── routes.py
-│   │   ├── models.py
-│   │   ├── controllers.py
-│   │   ├── services.py
-│   │   └── utils.py
-│   ├── Dockerfile
-│   ├── requirements.txt
-│   ├── config.py
-│   ├── run.py
-│   └── tests/
-│       ├── __init__.py
-│       ├── test_routes.py
-│       ├── test_models.py
-│       └── test_services.py
-│
-├── ORS-MenuService/
-│   ├── app/
-│   │   ├── __init__.py
-│   │   ├── routes.py
-│   │   ├── models.py
-│   │   ├── controllers.py
-│   │   ├── services.py
-│   │   └── utils.py
-│   ├── Dockerfile
-│   ├── requirements.txt
-│   ├── config.py
-│   ├── run.py
-│   └── tests/
-│       ├── __init__.py
-│       ├── test_routes.py
-│       ├── test_models.py
-│       └── test_services.py
-│
-├── ORS-OrderService/
-│   ├── app/
-│   │   ├── __init__.py
-│   │   ├── routes.py
-│   │   ├── models.py
-│   │   ├── controllers.py
-│   │   ├── services.py
-│   │   └── utils.py
-│   ├── Dockerfile
-│   ├── requirements.txt
-│   ├── config.py
-│   ├── run.py
-│   └── tests/
-│       ├── __init__.py
-│       ├── test_routes.py
-│       ├── test_models.py
-│       └── test_services.py
-│
-├── ORS-PaymentService/
-│   ├── app/
-│   │   ├── __init__.py
-│   │   ├── routes.py
-│   │   ├── models.py
-│   │   ├── controllers.py
-│   │   ├── services.py
-│   │   └── utils.py
-│   ├── Dockerfile
-│   ├── requirements.txt
-│   ├── config.py
-│   ├── run.py
-│   └── tests/
-│       ├── __init__.py
-│       ├── test_routes.py
-│       ├── test_models.py
-│       └── test_services.py
-│
-├── ORS-NotificationService/
-│   ├── app/
-│   │   ├── __init__.py
-│   │   ├── routes.py
-│   │   ├── models.py
-│   │   ├── controllers.py
-│   │   ├── services.py
-│   │   └── utils.py
-│   ├── Dockerfile
-│   ├── requirements.txt
-│   ├── config.py
-│   ├── run.py
-│   └── tests/
-│       ├── __init__.py
-│       ├── test_routes.py
-│       ├── test_models.py
-│       └── test_services.py
-│
-├── ORS-ServiceDiscovery/
-│   ├── app/
-│   │   ├── __init__.py
-│   │   ├── routes.py
-│   │   ├── models.py
-│   │   ├── controllers.py
-│   │   ├── services.py
-│   │   └── utils.py
-│   ├── Dockerfile
-│   ├── requirements.txt
-│   ├── config.py
-│   ├── run.py
-│   └── tests/
-│       ├── __init__.py
-│       ├── test_routes.py
-│       ├── test_models.py
-│       └── test_services.py
-│
-└── ORS-UserService/
-    ├── app/
-    │   ├── __init__.py
-    │   ├── routes.py
-    │   ├── models.py
-    │   ├── controllers.py
-    │   ├── services.py
-    │   └── utils.py
-    ├── Dockerfile
-    ├── requirements.txt
-    ├── config.py
-    ├── run.py
-    └── tests/
-        ├── __init__.py
-        ├── test_routes.py
-        ├── test_models.py
-        └── test_services.py
+    OnlineRestoServices/
+    │
+    ├── ORS-APIGateway/
+    │   ├── app/
+    │   │   ├── __init__.py
+    │   │   ├── routes.py
+    │   │   ├── models.py
+    │   │   ├── controllers.py
+    │   │   ├── services.py
+    │   │   └── utils.py
+    │   ├── Dockerfile
+    │   ├── requirements.txt
+    │   ├── config.py
+    │   ├── run.py
+    │   └── tests/
+    │       ├── __init__.py
+    │       ├── test_routes.py
+    │       ├── test_models.py
+    │       └── test_services.py
+    │
+    ├── ORS-MenuService/
+    │   ├── app/
+    │   │   ├── __init__.py
+    │   │   ├── routes.py
+    │   │   ├── models.py
+    │   │   ├── controllers.py
+    │   │   ├── services.py
+    │   │   └── utils.py
+    │   ├── Dockerfile
+    │   ├── requirements.txt
+    │   ├── config.py
+    │   ├── run.py
+    │   └── tests/
+    │       ├── __init__.py
+    │       ├── test_routes.py
+    │       ├── test_models.py
+    │       └── test_services.py
+    │
+    ├── ORS-OrderService/
+    │   ├── app/
+    │   │   ├── __init__.py
+    │   │   ├── routes.py
+    │   │   ├── models.py
+    │   │   ├── controllers.py
+    │   │   ├── services.py
+    │   │   └── utils.py
+    │   ├── Dockerfile
+    │   ├── requirements.txt
+    │   ├── config.py
+    │   ├── run.py
+    │   └── tests/
+    │       ├── __init__.py
+    │       ├── test_routes.py
+    │       ├── test_models.py
+    │       └── test_services.py
+    │
+    ├── ORS-PaymentService/
+    │   ├── app/
+    │   │   ├── __init__.py
+    │   │   ├── routes.py
+    │   │   ├── models.py
+    │   │   ├── controllers.py
+    │   │   ├── services.py
+    │   │   └── utils.py
+    │   ├── Dockerfile
+    │   ├── requirements.txt
+    │   ├── config.py
+    │   ├── run.py
+    │   └── tests/
+    │       ├── __init__.py
+    │       ├── test_routes.py
+    │       ├── test_models.py
+    │       └── test_services.py
+    │
+    ├── ORS-NotificationService/
+    │   ├── app/
+    │   │   ├── __init__.py
+    │   │   ├── routes.py
+    │   │   ├── models.py
+    │   │   ├── controllers.py
+    │   │   ├── services.py
+    │   │   └── utils.py
+    │   ├── Dockerfile
+    │   ├── requirements.txt
+    │   ├── config.py
+    │   ├── run.py
+    │   └── tests/
+    │       ├── __init__.py
+    │       ├── test_routes.py
+    │       ├── test_models.py
+    │       └── test_services.py
+    │
+    ├── ORS-ServiceDiscovery/
+    │   ├── app/
+    │   │   ├── __init__.py
+    │   │   ├── routes.py
+    │   │   ├── models.py
+    │   │   ├── controllers.py
+    │   │   ├── services.py
+    │   │   └── utils.py
+    │   ├── Dockerfile
+    │   ├── requirements.txt
+    │   ├── config.py
+    │   ├── run.py
+    │   └── tests/
+    │       ├── __init__.py
+    │       ├── test_routes.py
+    │       ├── test_models.py
+    │       └── test_services.py
+    │
+    └── ORS-UserService/
+        ├── app/
+        │   ├── __init__.py
+        │   ├── routes.py
+        │   ├── models.py
+        │   ├── controllers.py
+        │   ├── services.py
+        │   └── utils.py
+        ├── Dockerfile
+        ├── requirements.txt
+        ├── config.py
+        ├── run.py
+        └── tests/
+            ├── __init__.py
+            ├── test_routes.py
+            ├── test_models.py
+            └── test_services.py
 
-├── docker-compose.yml
-└── README.md
+    ├── docker-compose.yml
+    └── README.md
 
 
 # Why GraphQL Instead of Traditional Routes?
